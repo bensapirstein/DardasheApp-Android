@@ -667,6 +667,27 @@
       "preferred": {
         "characters": "hebrew"
       }
+	},
+	{
+      "id": 1902,
+      "languageTag": "ar-3b",
+      "composer": "appender",
+      "currencySet": "israeli_new_shekel",
+      "preferred": {
+        "characters": "arabrieh",
+        "symbols": "eastern",
+        "symbols2": "eastern",
+        "numericRow": "eastern_arabic"
+      }
+    },
+	{
+      "id": 1903,
+      "languageTag": "iw-3r",
+      "composer": "appender",
+      "currencySet": "israeli_new_shekel",
+      "preferred": {
+        "characters": "aravrit"
+	}
     },
     {
       "id": 2001,
