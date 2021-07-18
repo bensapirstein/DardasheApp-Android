@@ -682,6 +682,27 @@
       "preferred": {
         "characters": "korean"
       }
+    },
+	{
+      "id": 3001,
+      "languageTag": "ar-3b",
+      "composer": "appender",
+      "currencySet": "israeli_new_shekel",
+      "preferred": {
+        "characters": "arabrieh",
+        "symbols": "eastern",
+        "symbols2": "eastern",
+        "numericRow": "eastern_arabic"
+      }
+    },
+	{
+      "id": 3101,
+      "languageTag": "iw-3r",
+      "composer": "appender",
+      "currencySet": "israeli_new_shekel",
+      "preferred": {
+        "characters": "aravrit"
+      }
     }
   ]
 }
