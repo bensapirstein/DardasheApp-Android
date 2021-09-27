@@ -118,7 +118,7 @@ class SmartbarView : ConstraintLayout, KeyboardState.OnUpdateStateListener, Them
         mainScope.launch(Dispatchers.Default) {
             florisboard?.let {
                 val layout = florisboard.textInputManager.layoutManager.computeKeyboardAsync(
-                    KeyboardMode.SMARTBAR_CLIPBOARD_CURSOR_ROW,
+                    KeyboardMode.SMARTBAR_EXTENSION,
                     Subtype.DEFAULT
                 ).await()
                 withContext(Dispatchers.Main) {

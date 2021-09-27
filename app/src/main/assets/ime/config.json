@@ -701,7 +701,8 @@
       "composer": "appender",
       "currencySet": "israeli_new_shekel",
       "preferred": {
-        "characters": "aravrit"
+        "characters": "aravrit",
+        "extension": "semitic_extension"
       }
     }
   ]

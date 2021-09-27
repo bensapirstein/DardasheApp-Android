@@ -1,13 +1,13 @@
 {
   "type": "extension",
-  "name": "clipboard_cursor_row",
-  "label": "Clipboard Cursor Row",
-  "authors": [ "patrickgold" ],
+  "name": "semitic_extension",
+  "label": "Semitic Extension",
+  "authors": [ "Ben S" ],
   "direction": "ltr",
   "arrangement": [
     [
+      { "code":   -1, "label": "shift", "type": "modifier" },
       { "code": -130, "label": "clipboard_copy", "type": "enter_editing" },
-      { "code": -135, "label": "clipboard_select_all", "type": "enter_editing" },
       { "code":  -20, "label": "arrow_left", "type": "navigation" },
       { "code":  -21, "label": "arrow_right", "type": "navigation" },
       { "code": -131, "label": "clipboard_cut", "type": "enter_editing" },

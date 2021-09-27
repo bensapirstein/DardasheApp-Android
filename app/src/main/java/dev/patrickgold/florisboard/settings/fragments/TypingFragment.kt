@@ -85,6 +85,7 @@ class TypingFragment : SettingsMainActivity.SettingsFragment() {
             LayoutType.NUMERIC_ROW -> dialogView.numericRowLayoutSpinner
             LayoutType.PHONE -> dialogView.phoneLayoutSpinner
             LayoutType.PHONE2 -> dialogView.phone2LayoutSpinner
+            LayoutType.EXTENSION -> dialogView.extensionLayoutSpinner
             else -> null
         }
     }
@@ -146,6 +147,7 @@ class TypingFragment : SettingsMainActivity.SettingsFragment() {
                     numericRow = layoutManager.getMetaNameListFor(LayoutType.NUMERIC_ROW)[dialogView.numericRowLayoutSpinner.selectedItemPosition],
                     phone = layoutManager.getMetaNameListFor(LayoutType.PHONE)[dialogView.phoneLayoutSpinner.selectedItemPosition],
                     phone2 = layoutManager.getMetaNameListFor(LayoutType.PHONE2)[dialogView.phone2LayoutSpinner.selectedItemPosition],
+                    extension = layoutManager.getMetaNameListFor(LayoutType.EXTENSION)[dialogView.extensionLayoutSpinner.selectedItemPosition],
                 )
                 val success = subtypeManager.addSubtype(LocaleUtils.stringToLocale(languageCode), composerName, currencySetName, layoutMap)
                 if (!success) {

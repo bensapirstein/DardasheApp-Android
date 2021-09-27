@@ -157,6 +157,7 @@ data class SubtypeLayoutMap(
     val numericRow: String = NUMERIC_ROW_DEFAULT,
     val phone: String = PHONE_DEFAULT,
     val phone2: String = PHONE2_DEFAULT,
+    val extension: String = EXTENSION_DEFAULT,
 ) {
     @Transient private var _hashCode: Int = 0
 
@@ -169,6 +170,7 @@ data class SubtypeLayoutMap(
         private const val NUMERIC_ROW_CODE =            "nr"
         private const val PHONE_CODE =                  "p"
         private const val PHONE2_CODE =                 "p2"
+        private const val EXTENSION_CODE =              "e"
 
         private const val EQUALS =                      "="
         private const val DELIMITER =                   ","
@@ -181,6 +183,7 @@ data class SubtypeLayoutMap(
         private const val NUMERIC_ROW_DEFAULT =         "western_arabic"
         private const val PHONE_DEFAULT =               "telpad"
         private const val PHONE2_DEFAULT =              "telpad"
+        private const val EXTENSION_DEFAULT =           "clipboard_cursor_row"
 
         fun fromString(str: String): SubtypeLayoutMap {
             var characters: String = CHARACTERS_DEFAULT
@@ -191,6 +194,7 @@ data class SubtypeLayoutMap(
             var numericRow: String = NUMERIC_ROW_DEFAULT
             var phone: String = PHONE_DEFAULT
             var phone2: String = PHONE2_DEFAULT
+            var extension: String = EXTENSION_DEFAULT
             for (layout in str.split(DELIMITER)) {
                 val layoutSplit = layout.split(EQUALS)
                 if (layoutSplit.size == 2) {
@@ -205,11 +209,12 @@ data class SubtypeLayoutMap(
                         NUMERIC_ROW_CODE -> numericRow = layoutName
                         PHONE_CODE -> phone = layoutName
                         PHONE2_CODE -> phone2 = layoutName
+                        EXTENSION_CODE -> extension = layoutName
                     }
                 }
             }
             return SubtypeLayoutMap(
-                characters, symbols, symbols2, numeric, numericAdvanced, numericRow, phone, phone2
+                characters, symbols, symbols2, numeric, numericAdvanced, numericRow, phone, phone2, extension
             )
         }
     }
@@ -223,6 +228,7 @@ data class SubtypeLayoutMap(
         result = 31 * result + numericRow.hashCode()
         result = 31 * result + phone.hashCode()
         result = 31 * result + phone2.hashCode()
+        result = 31 * result + extension.hashCode()
         _hashCode = result
     }
 
@@ -236,6 +242,7 @@ data class SubtypeLayoutMap(
             LayoutType.NUMERIC_ROW -> numericRow
             LayoutType.PHONE -> phone
             LayoutType.PHONE2 -> phone2
+            LayoutType.EXTENSION -> extension
             else -> null
         }
     }
@@ -288,6 +295,12 @@ data class SubtypeLayoutMap(
             append(EQUALS)
             append(phone2)
 
+            append(DELIMITER)
+
+            append(EXTENSION_CODE)
+            append(EQUALS)
+            append(extension)
+
             toString()
         }
     }
@@ -306,6 +319,7 @@ data class SubtypeLayoutMap(
         if (numericRow != other.numericRow) return false
         if (phone != other.phone) return false
         if (phone2 != other.phone2) return false
+        if (extension != other.extension) return false
 
         return true
     }
