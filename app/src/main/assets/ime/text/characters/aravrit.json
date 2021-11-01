@@ -18,37 +18,37 @@
           { "code":   95, "label": "_" }
         ]
       } },
-      { "code":  1511, "label": "ق" },
-      { "code":  1512, "label": "ר" },
-      { "code":  1488, "label": "א" },
-      { "code":  1496, "label": "ט" },
-      { "code":  1493, "label": "ו" },
-      { "code":  1503, "label": "ן" },
-      { "code":  1501, "label": "ם" },
-      { "code":  1508, "label": "פ" }
+	  { "$": "trans_text_key", "code":  1511, "codePoints":  [8205, 1511, 8205], "label": "ק", "transCode":  1602, "transLabel": "ق" },
+	  { "$": "trans_text_key", "code":  1512, "codePoints":  [8205, 1512], "label": "ר", "transCode":  1585, "transLabel": "ر" },
+	  { "$": "trans_text_key", "code":  1488, "codePoints":  [8205, 1488], "label": "א", "transCode":  1575, "transLabel": "ا" },
+	  { "$": "trans_text_key", "code":  1496, "codePoints":  [8205, 1496, 8205], "label": "ט", "transCode":  1591, "transLabel": "ط" },
+	  { "$": "trans_text_key", "code":  1493, "codePoints":  [8205, 1493], "label": "ו", "transCode":  1608, "transLabel": "و" },
+	  { "$": "trans_text_key", "code":  1503, "codePoints":  [8205, 1503, 8205], "label": "ן", "transCode":  1606, "transLabel": "ن" },
+	  { "$": "trans_text_key", "code":  1501, "codePoints":  [8205, 1501, 8205], "label": "ם", "transCode":  1605, "transLabel": "م" },
+	  { "$": "trans_text_key", "code":  1508, "codePoints":  [8205, 1508, 8205], "label": "פ", "transCode":  1601, "transLabel": "ف" }
     ],
     [
-      { "code":  1513, "label": "ש" },
-      { "code":  1491, "label": "ד" },
-      { "code":  1490, "label": "ג" },
-      { "code":  1499, "label": "כ" },
-      { "code":  1506, "label": "ע" },
-      { "code":  1497, "label": "י" },
-      { "code":  1495, "label": "ח" },
-      { "code":  1500, "label": "ל" },
-      { "code":  1498, "label": "ך" },
-      { "code":  1507, "label": "ף" }
+	  { "$": "trans_text_key", "code":  1513, "codePoints":  [8205, 1513, 8205], "label": "ש", "transCode":  1588, "transLabel": "ش" },
+	  { "$": "trans_text_key", "code":  1491, "codePoints":  [8205, 1491], "label": "ד", "transCode":  1583, "transLabel": "د" },
+	  { "$": "trans_text_key", "code":  1490, "codePoints":  [8205, 1490, 8205], "label": "ג", "transCode":  1580, "transLabel": "ج" },
+	  { "$": "trans_text_key", "code":  1499, "codePoints":  [8205, 1499, 8205], "label": "כ", "transCode":  1603, "transLabel": "ك" },
+	  { "$": "trans_text_key", "code":  1506, "codePoints":  [8205, 1506, 8205], "label": "ע", "transCode":  1593, "transLabel": "ع" },
+	  { "$": "trans_text_key", "code":  1497, "codePoints":  [8205, 1497, 8205], "label": "י", "transCode":  1610, "transLabel": "ي" },
+	  { "$": "trans_text_key", "code":  1495, "codePoints":  [8205, 1495, 8205], "label": "ח", "transCode":  1581, "transLabel": "ح" },
+	  { "$": "trans_text_key", "code":  1500, "codePoints":  [8205, 1500, 8205], "label": "ל", "transCode":  1604, "transLabel": "ل" },
+	  { "$": "trans_text_key", "code":  1498, "codePoints":  [8205, 1498, 8205], "label": "ך", "transCode":  1603, "transLabel": "ك" },
+	  { "$": "trans_text_key", "code":  1507, "codePoints":  [8205, 1507, 8205], "label": "ף", "transCode":  1601, "transLabel": "ف" }
     ],
     [
-      { "code":  1494, "label": "ז" },
-      { "code":  1505, "label": "ס" },
-      { "code":  1489, "label": "ב" },
-      { "code":  1492, "label": "ה" },
-      { "code":  1504, "label": "נ" },
-      { "code":  1502, "label": "מ" },
-      { "code":  1510, "label": "צ" },
-      { "code":  1514, "label": "ת" },
-      { "code":  1509, "label": "ץ" }
+	  { "$": "trans_text_key", "code":  1494, "codePoints":  [8205, 1494], "label": "ז", "transCode":  1586, "transLabel": "ز" },
+	  { "$": "trans_text_key", "code":  1505, "codePoints":  [8205, 1505, 8205], "label": "ס", "transCode":  1587, "transLabel": "س" },
+	  { "$": "trans_text_key", "code":  1489, "codePoints":  [8205, 1489, 8205], "label": "ב", "transCode":  1576, "transLabel": "ب" },	  
+	  { "$": "trans_text_key", "code":  1492, "codePoints":  [8205, 1492, 8205], "label": "ה", "transCode":  1607, "transLabel": "ه" },
+	  { "$": "trans_text_key", "code":  1504, "codePoints":  [8205, 1504, 8205], "label": "נ", "transCode":  1606, "transLabel": "ن" },
+	  { "$": "trans_text_key", "code":  1502, "codePoints":  [8205, 1502, 8205], "label": "מ", "transCode":  1605, "transLabel": "م" },
+	  { "$": "trans_text_key", "code":  1510, "codePoints":  [8205, 1510, 8205], "label": "צ", "transCode":  1589, "transLabel": "ص" },
+	  { "$": "trans_text_key", "code":  1514, "codePoints":  [8205, 1514, 8205], "label": "ת", "transCode":  1578, "transLabel": "ت" },
+	  { "$": "trans_text_key", "code":  1509, "codePoints":  [8205, 1509, 8205], "label": "ץ", "transCode":  1589, "transLabel": "ص" }
     ]
   ]
 }

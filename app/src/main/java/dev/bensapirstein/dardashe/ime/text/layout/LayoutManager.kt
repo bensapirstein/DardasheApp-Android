@@ -208,25 +208,39 @@ class LayoutManager(context: Context) {
 
         // Add hints to keys
         if (keyboardMode == KeyboardMode.CHARACTERS) {
-            val symbolsComputedArrangement = computeKeyboardAsync(KeyboardMode.SYMBOLS, subtype).await().arrangement
-            // number row hint always happens on first row
-            if (prefs.keyboard.hintedNumberRowEnabled.get()) {
-                val row = computedArrangement[0]
-                val symbolRow = symbolsComputedArrangement[0]
-                addRowHints(row, symbolRow, KeyType.NUMERIC)
-            }
-            // all other symbols are added bottom-aligned
-            val rOffset = computedArrangement.size - symbolsComputedArrangement.size
-            for ((r, row) in computedArrangement.withIndex()) {
-                if (r < rOffset) {
-                    continue
-                }
-                val symbolRow = symbolsComputedArrangement.getOrNull(r - rOffset)
-                if (symbolRow != null) {
-                    addRowHints(row, symbolRow, KeyType.CHARACTER)
+            for (row in computedArrangement) {
+                for (key in row) {
+                    if (key.data is TransTextKeyData) {
+                        if (key.data.transCodes.size == 0){
+                            key.computedSymbolHint = TextKeyData(code = key.data.transCode, label = key.data.transLabel).compute(DefaultComputingEvaluator)
+                        }
+                        else{
+                            key.computedSymbolHint = MultiTextKeyData(codePoints = key.data.transCodes, label = key.data.transLabel).compute(DefaultComputingEvaluator)
+                        }
+                    }
                 }
             }
         }
+//        if (keyboardMode == KeyboardMode.CHARACTERS) {
+//            val symbolsComputedArrangement = computeKeyboardAsync(KeyboardMode.SYMBOLS, subtype).await().arrangement
+//            // number row hint always happens on first row
+//            if (prefs.keyboard.hintedNumberRowEnabled.get()) {
+//                val row = computedArrangement[0]
+//                val symbolRow = symbolsComputedArrangement[0]
+//                addRowHints(row, symbolRow, KeyType.NUMERIC)
+//            }
+//            // all other symbols are added bottom-aligned
+//            val rOffset = computedArrangement.size - symbolsComputedArrangement.size
+//            for ((r, row) in computedArrangement.withIndex()) {
+//                if (r < rOffset) {
+//                    continue
+//                }
+//                val symbolRow = symbolsComputedArrangement.getOrNull(r - rOffset)
+//                if (symbolRow != null) {
+//                    addRowHints(row, symbolRow, KeyType.CHARACTER)
+//                }
+//            }
+//        }
 
         val array = Array(computedArrangement.size) { computedArrangement[it] }
         return TextKeyboard(

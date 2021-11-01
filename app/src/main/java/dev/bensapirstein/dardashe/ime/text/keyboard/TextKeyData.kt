@@ -323,6 +323,46 @@ class AutoTextKeyData(
 }
 
 @Serializable
+@SerialName("trans_text_key")
+class TransTextKeyData(
+    override val type: KeyType = KeyType.CHARACTER,
+    override val code: Int = KeyCode.MULTIPLE_CODE_POINTS,
+    val transCode: Int = KeyCode.UNSPECIFIED,
+    val codePoints: IntArray = intArrayOf(),
+    val transCodes: IntArray = intArrayOf(),
+    override val label: String = "",
+    val transLabel: String = "",
+    override val groupId: Int = KeyData.GROUP_DEFAULT,
+    override val popup: PopupSet<AbstractKeyData>? = null
+) : KeyData{
+    //@Transient override val code: Int = KeyCode.MULTIPLE_CODE_POINTS
+    override fun compute(evaluator: ComputingEvaluator): KeyData? {
+        return this
+    }
+
+    override fun asString(isForDisplay: Boolean): String {
+        return stringBuilder {
+            if (isForDisplay) {
+                append(label)
+            } else {
+                if (codePoints.size == 0){
+                    try { appendCodePoint(code) } catch (_: Throwable) { }
+                }
+                else {
+                    for (codePoint in codePoints) {
+                        try {
+                            appendCodePoint(codePoint)
+                        } catch (_: Throwable) {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@Serializable
 @SerialName("multi_text_key")
 class MultiTextKeyData(
     override val type: KeyType = KeyType.CHARACTER,

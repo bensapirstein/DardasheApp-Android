@@ -38,6 +38,7 @@ import dev.bensapirstein.dardashe.ime.text.composing.KanaUnicode
 import dev.bensapirstein.dardashe.ime.text.composing.WithRules
 import dev.bensapirstein.dardashe.ime.text.keyboard.AutoTextKeyData
 import dev.bensapirstein.dardashe.ime.text.keyboard.MultiTextKeyData
+import dev.bensapirstein.dardashe.ime.text.keyboard.TransTextKeyData
 import dev.bensapirstein.dardashe.ime.text.keyboard.TextKeyData
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.decodeFromString
@@ -61,6 +62,7 @@ class AssetManager(context: Context) {
                 subclass(TextKeyData::class, TextKeyData.serializer())
                 subclass(AutoTextKeyData::class, AutoTextKeyData.serializer())
                 subclass(MultiTextKeyData::class, MultiTextKeyData.serializer())
+                subclass(TransTextKeyData::class, TransTextKeyData.serializer())
                 subclass(EmojiKeyData::class, EmojiKeyData.serializer())
                 subclass(CaseSelector::class, CaseSelector.serializer())
                 subclass(VariationSelector::class, VariationSelector.serializer())
@@ -72,6 +74,7 @@ class AssetManager(context: Context) {
                 subclass(TextKeyData::class, TextKeyData.serializer())
                 subclass(AutoTextKeyData::class, AutoTextKeyData.serializer())
                 subclass(MultiTextKeyData::class, MultiTextKeyData.serializer())
+                subclass(TransTextKeyData::class, TransTextKeyData.serializer())
                 subclass(EmojiKeyData::class, EmojiKeyData.serializer())
                 default { TextKeyData.serializer() }
             }
