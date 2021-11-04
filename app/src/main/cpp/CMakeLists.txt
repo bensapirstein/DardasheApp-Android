@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.10.2)
 
-project("florisboard")
+project("dardashe")
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -24,17 +24,17 @@ add_subdirectory(ime/nlp)
 add_subdirectory(ime/spelling)
 
 add_library(
-        florisboard-native
+        dardashe-native
         SHARED
-        dev_patrickgold_florisboard_FlorisApplication.cpp
-        dev_patrickgold_florisboard_ime_nlp_SuggestionList.cpp
-        dev_patrickgold_florisboard_ime_spelling_SpellingDict.cpp
+        dev_bensapirstein_dardashe_FlorisApplication.cpp
+        dev_bensapirstein_dardashe_ime_nlp_SuggestionList.cpp
+        dev_bensapirstein_dardashe_ime_spelling_SpellingDict.cpp
 )
 
-target_compile_options(florisboard-native PRIVATE -ffunction-sections -fdata-sections -fexceptions)
+target_compile_options(dardashe-native PRIVATE -ffunction-sections -fdata-sections -fexceptions)
 target_link_libraries(
         # Destination
-        florisboard-native
+        dardashe-native
 
         # Sources
         android

@@ -1,4 +1,4 @@
-rootProject.name = "FlorisBoard"
+rootProject.name = "Dardashe"
 
 include(":app")
 

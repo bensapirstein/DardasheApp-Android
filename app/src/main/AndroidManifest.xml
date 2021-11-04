@@ -15,7 +15,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.patrickgold.florisboard">
+    package="dev.bensapirstein.dardashe">
 
     <!-- Permission needed to vibrate if the user has key press vibration enabled -->
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -34,7 +34,7 @@
     </queries>
 
     <application
-        android:name="dev.patrickgold.florisboard.FlorisApplication"
+        android:name="dev.bensapirstein.dardashe.FlorisApplication"
         android:allowBackup="false"
         android:icon="@mipmap/floris_app_icon"
         android:label="@string/floris_app_name"
@@ -44,7 +44,7 @@
 
         <!-- IME service -->
         <service
-            android:name="dev.patrickgold.florisboard.FlorisImeService"
+            android:name="dev.bensapirstein.dardashe.FlorisImeService"
             android:label="@string/floris_app_name"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:directBootAware="true"
@@ -57,7 +57,7 @@
 
         <!-- Spellchecker service -->
         <service
-            android:name="dev.patrickgold.florisboard.FlorisSpellCheckerService"
+            android:name="dev.bensapirstein.dardashe.FlorisSpellCheckerService"
             android:label="@string/floris_app_name"
             android:permission="android.permission.BIND_TEXT_SERVICE"
             android:exported="true">
@@ -69,7 +69,7 @@
 
         <!-- Main App Activity -->
         <activity
-            android:name="dev.patrickgold.florisboard.app.FlorisAppActivity"
+            android:name="dev.bensapirstein.dardashe.app.FlorisAppActivity"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/settings__title"
             android:launchMode="singleTask"
@@ -79,7 +79,7 @@
 
         <!-- Settings Activity -->
         <activity
-            android:name="dev.patrickgold.florisboard.oldsettings.SettingsMainActivity"
+            android:name="dev.bensapirstein.dardashe.oldsettings.SettingsMainActivity"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/settings__title"
             android:launchMode="singleTask"
@@ -88,12 +88,12 @@
 
         <!-- Using an activity alias to disable/enable the app icon in the launcher -->
         <activity-alias
-            android:name="dev.patrickgold.florisboard.SettingsLauncherAlias"
+            android:name="dev.bensapirstein.dardashe.SettingsLauncherAlias"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/floris_app_name"
             android:launchMode="singleTask"
             android:roundIcon="@mipmap/floris_app_icon_round"
-            android:targetActivity="dev.patrickgold.florisboard.app.FlorisAppActivity"
+            android:targetActivity="dev.bensapirstein.dardashe.app.FlorisAppActivity"
             android:theme="@style/FlorisAppTheme"
             android:exported="true">
             <intent-filter>
@@ -104,34 +104,34 @@
 
         <!-- User Dictionary Manager Activity -->
         <activity
-            android:name="dev.patrickgold.florisboard.oldsettings.UdmActivity"
+            android:name="dev.bensapirstein.dardashe.oldsettings.UdmActivity"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/settings__title"
             android:theme="@style/SettingsTheme"/>
 
         <!-- Theme Selector Activity -->
         <activity
-            android:name="dev.patrickgold.florisboard.oldsettings.ThemeManagerActivity"
+            android:name="dev.bensapirstein.dardashe.oldsettings.ThemeManagerActivity"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/settings__title"
             android:theme="@style/SettingsTheme"/>
 
         <!-- Theme Editor Activity -->
         <activity
-            android:name="dev.patrickgold.florisboard.oldsettings.ThemeEditorActivity"
+            android:name="dev.bensapirstein.dardashe.oldsettings.ThemeEditorActivity"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/settings__theme_editor__title"
             android:theme="@style/SettingsTheme"/>
 
         <!-- Crash Dialog Activity -->
         <activity
-            android:name="dev.patrickgold.florisboard.crashutility.CrashDialogActivity"
+            android:name="dev.bensapirstein.dardashe.crashutility.CrashDialogActivity"
             android:icon="@mipmap/floris_app_icon"
             android:label="@string/crash_dialog__title"
             android:theme="@style/CrashDialogTheme"/>
 
         <provider
-            android:name="dev.patrickgold.florisboard.ime.clip.provider.FlorisContentProvider"
+            android:name="dev.bensapirstein.dardashe.ime.clip.provider.FlorisContentProvider"
             android:authorities="${applicationId}.provider.clip"
             android:grantUriPermissions="true"
             android:exported="false">

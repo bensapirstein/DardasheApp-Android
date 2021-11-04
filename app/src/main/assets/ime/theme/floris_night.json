@@ -1,5 +1,5 @@
 {
-  "$type": "dev.patrickgold.florisboard.ime.theme.Theme",
+  "$type": "dev.bensapirstein.dardashe.ime.theme.Theme",
   "name": "floris_night",
   "label": "Floris Night",
   "authors": [ "patrickgold" ],
