@@ -1,5 +1,5 @@
 {
-  "$type": "dev.patrickgold.florisboard.ime.theme.Theme",
+  "$type": "dev.bensapirstein.florisboard.ime.theme.Theme",
   "name": "floris_day_borderless",
   "label": "Floris Day Borderless",
   "authors": [ "patrickgold" ],
