@@ -25,11 +25,11 @@ import dev.bensapirstein.dardashe.BuildConfig
 import dev.bensapirstein.dardashe.debug.flogInfo
 
 private const val IME_ID: String =
-    "dev.bensapirstein.florisboard/.FlorisImeService"
+    "dev.bensapirstein.dardashe/.FlorisImeService"
 private const val IME_ID_BETA: String =
-    "dev.bensapirstein.florisboard.beta/dev.bensapirstein.florisboard.FlorisImeService"
+    "dev.bensapirstein.dardashe.beta/dev.bensapirstein.dardashe.FlorisImeService"
 private const val IME_ID_DEBUG: String =
-    "dev.bensapirstein.florisboard.debug/dev.bensapirstein.florisboard.FlorisImeService"
+    "dev.bensapirstein.dardashe.debug/dev.bensapirstein.dardashe.FlorisImeService"
 
 object InputMethodUtils {
     fun checkIsFlorisboardEnabled(context: Context): Boolean {

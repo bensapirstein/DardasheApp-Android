@@ -1,5 +1,5 @@
 {
-  "$type": "dev.bensapirstein.florisboard.ime.theme.Theme",
+  "$type": "dev.bensapirstein.dardashe.ime.theme.Theme",
   "name": "floris_black_borderless",
   "label": "Floris Black Borderless",
   "authors": [ "serebit" ],

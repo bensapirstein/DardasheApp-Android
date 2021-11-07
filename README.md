@@ -29,7 +29,7 @@ fully respecting your privacy. Currently in early-beta state.
 <p><a href="https://f-droid.org/packages/dev.bensapirstein.dardashe"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="64" alt="F-Droid badge"></a></p>
 <p>
 
-**Google Play**: Join the [FlorisBoard Test Group](https://groups.google.com/g/florisboard-public-alpha-test), then visit the [testing page](https://play.google.com/apps/testing/dev.bensapirstein.florisboard). Once joined and installed, updates will be delivered like for any other app. ([Store entry](https://play.google.com/store/apps/details?id=dev.bensapirstein.florisboard))
+**Google Play**: Join the [FlorisBoard Test Group](https://groups.google.com/g/florisboard-public-alpha-test), then visit the [testing page](https://play.google.com/apps/testing/dev.bensapirstein.dardashe). Once joined and installed, updates will be delivered like for any other app. ([Store entry](https://play.google.com/store/apps/details?id=dev.bensapirstein.dardashe))
 
 </p>
 <p>
@@ -42,7 +42,7 @@ fully respecting your privacy. Currently in early-beta state.
 <p><a href="https://apt.izzysoft.de/fdroid/index/apk/dev.bensapirstein.dardashe.beta"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" height="64" alt="IzzySoft repo badge"></a></p>
 <p>
 
-**Google Play**: Join the [FlorisBoard Test Group](https://groups.google.com/g/florisboard-public-alpha-test), then visit the [beta testing page](https://play.google.com/apps/testing/dev.bensapirstein.florisboard.beta). Once joined and installed, updates will be delivered like for any other app. ([Store entry](https://play.google.com/store/apps/details?id=dev.bensapirstein.florisboard.beta))
+**Google Play**: Join the [FlorisBoard Test Group](https://groups.google.com/g/florisboard-public-alpha-test), then visit the [beta testing page](https://play.google.com/apps/testing/dev.bensapirstein.dardashe.beta). Once joined and installed, updates will be delivered like for any other app. ([Store entry](https://play.google.com/store/apps/details?id=dev.bensapirstein.dardashe.beta))
 
 </p>
 <p>

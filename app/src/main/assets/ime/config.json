@@ -1,5 +1,5 @@
 {
-  "package": "dev.bensapirstein.florisboard",
+  "package": "dev.bensapirstein.dardashe",
   "composers": [
     { "$": "appender" },
     { "$": "hangul-unicode" },

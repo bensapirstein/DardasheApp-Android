@@ -1,7 +1,7 @@
 {
   "$": "ime.extension.theme",
   "meta": {
-    "id": "dev.bensapirstein.florisboard.theme.floris_night",
+    "id": "dev.bensapirstein.dardashe.theme.floris_night",
     "version": "0.1.0",
     "title": "Floris Night",
     "description": "Default dark/night theme for the keyboard UI",
