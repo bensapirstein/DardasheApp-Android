@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "744085251061",
+    "project_id": "dardashe-643fd",
+    "storage_bucket": "dardashe-643fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744085251061:android:3f81381433dca3683136bc",
+        "android_client_info": {
+          "package_name": "dev.bensapirstein.dardashe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744085251061-rf026goor977ic5qmkdsou5l2ebj0n88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgHjK489I1LurYMDt5_rMH2MEGmm1Yajk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744085251061-rf026goor977ic5qmkdsou5l2ebj0n88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

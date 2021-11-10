@@ -7,7 +7,21 @@ plugins {
     id("de.mannodermaus.android-junit5")
 }
 
+val versionMajor = 0
+val versionMinor = 1
+val versionPatch = 0
+var versionClassifier = ""
+val isSnapshot = true
+
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("C:\\Arabic\\NLP\\Android\\keystores\\upload-keystore.jks")
+            storePassword = "3arabrewDardashe"
+            keyAlias = "upload"
+            keyPassword = "3arabrewDardashe"
+        }
+    }
     compileSdk = 31
     buildToolsVersion = "30.0.3"
     ndkVersion = "22.1.7171670"
@@ -27,9 +41,9 @@ android {
         applicationId = "dev.bensapirstein.dardashe"
         minSdk = 23
         targetSdk = 30
-        versionCode = 61
-        versionName = "0.3.14"
-        multiDexEnabled = true
+        versionCode = generateVersionCode()
+        versionName = generateVersionName()
+	multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -119,7 +133,7 @@ android {
             resValue("mipmap", "floris_app_icon", "@mipmap/ic_app_icon_release")
             resValue("mipmap", "floris_app_icon_round", "@mipmap/ic_app_icon_release_round")
             resValue("drawable", "floris_app_icon_foreground", "@drawable/ic_app_icon_release_foreground")
-            resValue("string", "floris_app_name", "@string/app_name")
+            resValue("string", "floris_app_name", "Dardashe")
         }
     }
 
@@ -139,8 +153,6 @@ android {
 
 tasks.withType<Test> {
     useJUnitPlatform()
-}
-
 dependencies {
     implementation("androidx.activity:activity-compose:1.3.1")
     implementation("androidx.activity:activity-ktx:1.3.1") // possibly remove after settings rework
@@ -176,4 +188,7 @@ dependencies {
 
     androidTestImplementation("androidx.test.ext", "junit", "1.1.2")
     androidTestImplementation("androidx.test.espresso", "espresso-core", "3.3.0")
+
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation(platform("com.google.firebase:firebase-bom:29.0.0"))
 }
