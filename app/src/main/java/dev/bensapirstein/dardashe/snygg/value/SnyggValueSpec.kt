@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.snygg.value
+package dev.bensapirstein.dardashe.snygg.value
 
-import dev.patrickgold.florisboard.common.stringBuilder
+import dev.bensapirstein.dardashe.common.stringBuilder
 
 interface SnyggValueSpec {
     val id: String?

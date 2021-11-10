@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.app.ui.splash
+package dev.bensapirstein.dardashe.app.ui.splash
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,11 +25,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import dev.patrickgold.florisboard.R
-import dev.patrickgold.florisboard.app.LocalNavController
-import dev.patrickgold.florisboard.app.prefs.florisPreferenceModel
-import dev.patrickgold.florisboard.app.ui.Routes
-import dev.patrickgold.florisboard.app.ui.components.FlorisCanvasIcon
+import dev.bensapirstein.dardashe.R
+import dev.bensapirstein.dardashe.app.LocalNavController
+import dev.bensapirstein.dardashe.app.prefs.florisPreferenceModel
+import dev.bensapirstein.dardashe.app.ui.Routes
+import dev.bensapirstein.dardashe.app.ui.components.FlorisCanvasIcon
 import dev.patrickgold.jetpref.datastore.model.observeAsState
 
 @Composable

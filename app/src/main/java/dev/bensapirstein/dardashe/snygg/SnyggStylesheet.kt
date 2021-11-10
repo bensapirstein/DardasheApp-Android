@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.snygg
+package dev.bensapirstein.dardashe.snygg
 
-import dev.patrickgold.florisboard.ime.theme.spec.FlorisImeUiSpec
-import dev.patrickgold.florisboard.snygg.value.SnyggImplicitInheritValue
+import dev.bensapirstein.dardashe.ime.theme.spec.FlorisImeUiSpec
+import dev.bensapirstein.dardashe.snygg.value.SnyggImplicitInheritValue
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.MapSerializer

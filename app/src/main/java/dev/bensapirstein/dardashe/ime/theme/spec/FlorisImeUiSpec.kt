@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.ime.theme.spec
+package dev.bensapirstein.dardashe.ime.theme.spec
 
-import dev.patrickgold.florisboard.snygg.Snygg
-import dev.patrickgold.florisboard.snygg.SnyggLevel
-import dev.patrickgold.florisboard.snygg.SnyggSpec
-import dev.patrickgold.florisboard.snygg.value.SnyggSolidColorValue
+import dev.bensapirstein.dardashe.snygg.Snygg
+import dev.bensapirstein.dardashe.snygg.SnyggLevel
+import dev.bensapirstein.dardashe.snygg.SnyggSpec
+import dev.bensapirstein.dardashe.snygg.value.SnyggSolidColorValue
 
 object FlorisImeUiSpec : SnyggSpec({
     element(FlorisImeUi.Keyboard) {

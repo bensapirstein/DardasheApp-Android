@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.app.ui.devtools
+package dev.bensapirstein.dardashe.app.ui.devtools
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import dev.patrickgold.florisboard.R
-import dev.patrickgold.florisboard.app.LocalNavController
-import dev.patrickgold.florisboard.app.res.stringRes
-import dev.patrickgold.florisboard.app.ui.Routes
-import dev.patrickgold.florisboard.app.ui.components.FlorisScreen
-import dev.patrickgold.florisboard.ime.dictionary.DictionaryManager
-import dev.patrickgold.florisboard.ime.dictionary.FlorisUserDictionaryDatabase
-import dev.patrickgold.florisboard.util.AndroidSettings
+import dev.bensapirstein.dardashe.R
+import dev.bensapirstein.dardashe.app.LocalNavController
+import dev.bensapirstein.dardashe.app.res.stringRes
+import dev.bensapirstein.dardashe.app.ui.Routes
+import dev.bensapirstein.dardashe.app.ui.components.FlorisScreen
+import dev.bensapirstein.dardashe.ime.dictionary.DictionaryManager
+import dev.bensapirstein.dardashe.ime.dictionary.FlorisUserDictionaryDatabase
+import dev.bensapirstein.dardashe.util.AndroidSettings
 import dev.patrickgold.jetpref.ui.compose.JetPrefAlertDialog
 import dev.patrickgold.jetpref.ui.compose.Preference
 import dev.patrickgold.jetpref.ui.compose.PreferenceGroup

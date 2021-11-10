@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.app.ui.devtools
+package dev.bensapirstein.dardashe.app.ui.devtools
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -26,10 +26,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
-import dev.patrickgold.florisboard.R
-import dev.patrickgold.florisboard.app.res.stringRes
-import dev.patrickgold.florisboard.app.ui.components.FlorisScreen
-import dev.patrickgold.florisboard.util.AndroidSettings
+import dev.bensapirstein.dardashe.R
+import dev.bensapirstein.dardashe.app.res.stringRes
+import dev.bensapirstein.dardashe.app.ui.components.FlorisScreen
+import dev.bensapirstein.dardashe.util.AndroidSettings
 import dev.patrickgold.jetpref.ui.compose.JetPrefAlertDialog
 import dev.patrickgold.jetpref.ui.compose.Preference
 

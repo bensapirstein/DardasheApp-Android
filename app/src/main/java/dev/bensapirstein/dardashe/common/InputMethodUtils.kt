@@ -27,7 +27,7 @@ import dev.bensapirstein.dardashe.debug.flogDebug
 import dev.bensapirstein.dardashe.util.AndroidSettings
 
 private const val DELIMITER = ':'
-private const val IME_SERVICE_CLASS_NAME = "dev.patrickgold.florisboard.FlorisImeService"
+private const val IME_SERVICE_CLASS_NAME = "dev.bensapirstein.dardashe.FlorisImeService"
 
 object InputMethodUtils {
     @Composable

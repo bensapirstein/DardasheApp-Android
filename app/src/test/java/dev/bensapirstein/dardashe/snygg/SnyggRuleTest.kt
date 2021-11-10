@@ -1,8 +1,4 @@
-<<<<<<< HEAD:app/src/test/java/dev/bensapirstein/dardashe/snygg/SnyggRuleTest.kt
-package dev.patrickgold.florisboard.snygg
-=======
-package dev.bensapirstein.dardashe.ime.snygg
->>>>>>> 19ada831 (ProjectNameChange: Finalized name changing, app now runs):app/src/test/java/dev/bensapirstein/dardashe/ime/snygg/SnyggRuleTest.kt
+package dev.bensapirstein.dardashe.snygg
 
 import io.kotest.core.spec.style.FreeSpec
 import io.kotest.matchers.shouldBe

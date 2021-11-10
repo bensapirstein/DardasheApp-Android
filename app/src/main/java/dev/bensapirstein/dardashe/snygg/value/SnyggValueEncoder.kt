@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.snygg.value
+package dev.bensapirstein.dardashe.snygg.value
 
 /**
  * SnyggValueEncoder is responsible for the representation of a [SnyggValue] specification and for providing methods

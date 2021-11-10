@@ -68,6 +68,7 @@ android {
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")
         }
+        signingConfig = signingConfigs.getByName("release")
 
         sourceSets {
             maybeCreate("main").apply {
@@ -153,6 +154,24 @@ android {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+fun generateVersionCode(): Int {
+    return versionMajor * 10000 + versionMinor * 100 + versionPatch
+}
+
+fun generateVersionName(): String {
+    var versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
+    if (versionClassifier == "" && isSnapshot) {
+        versionClassifier = "SNAPSHOT"
+    }
+
+    if (versionClassifier != "") {
+        versionName += "-$versionClassifier"
+    }
+    return versionName;
+}
+
 dependencies {
     implementation("androidx.activity:activity-compose:1.3.1")
     implementation("androidx.activity:activity-ktx:1.3.1") // possibly remove after settings rework

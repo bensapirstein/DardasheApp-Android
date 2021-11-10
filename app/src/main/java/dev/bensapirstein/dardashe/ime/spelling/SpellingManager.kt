@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.ime.spelling
+package dev.bensapirstein.dardashe.ime.spelling
 
 import android.content.Context
 import android.net.Uri

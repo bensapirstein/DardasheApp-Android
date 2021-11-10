@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.app.ui.devtools
+package dev.bensapirstein.dardashe.app.ui.devtools
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -26,9 +26,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontFamily
-import dev.patrickgold.florisboard.R
-import dev.patrickgold.florisboard.app.res.stringRes
-import dev.patrickgold.florisboard.app.ui.components.FlorisScreen
+import dev.bensapirstein.dardashe.R
+import dev.bensapirstein.dardashe.app.res.stringRes
+import dev.bensapirstein.dardashe.app.ui.components.FlorisScreen
 import java.util.*
 
 @Composable

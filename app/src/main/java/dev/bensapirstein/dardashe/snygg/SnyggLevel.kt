@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.snygg
+package dev.bensapirstein.dardashe.snygg
 
 /**
  * SnyggLevel indicates if a rule property is intended to be edited by all users (BASIC) or only by advanced users

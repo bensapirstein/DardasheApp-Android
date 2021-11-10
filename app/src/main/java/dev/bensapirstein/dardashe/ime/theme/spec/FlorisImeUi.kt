@@ -14,11 +14,7 @@
  * limitations under the License.
  */
 
-<<<<<<< HEAD:app/src/main/java/dev/bensapirstein/dardashe/ime/theme/spec/FlorisImeUi.kt
-package dev.patrickgold.florisboard.ime.theme.spec
-=======
-package dev.bensapirstein.dardashe.ime.snygg
->>>>>>> 19ada831 (ProjectNameChange: Finalized name changing, app now runs):app/src/main/java/dev/bensapirstein/dardashe/ime/snygg/SnyggPropertySet.kt
+package dev.bensapirstein.dardashe.ime.theme.spec
 
 object FlorisImeUi {
     const val Keyboard = "keyboard"

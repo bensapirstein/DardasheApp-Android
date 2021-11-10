@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.app.ui.settings.theme
+package dev.bensapirstein.dardashe.app.ui.settings.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalContext
-import dev.patrickgold.florisboard.R
-import dev.patrickgold.florisboard.app.LocalNavController
-import dev.patrickgold.florisboard.app.res.stringRes
-import dev.patrickgold.florisboard.app.ui.components.FlorisScreen
-import dev.patrickgold.florisboard.common.launchActivity
-import dev.patrickgold.florisboard.ime.theme.ThemeMode
-import dev.patrickgold.florisboard.oldsettings.ThemeManagerActivity
-import dev.patrickgold.florisboard.util.AndroidVersion
+import dev.bensapirstein.dardashe.R
+import dev.bensapirstein.dardashe.app.LocalNavController
+import dev.bensapirstein.dardashe.app.res.stringRes
+import dev.bensapirstein.dardashe.app.ui.components.FlorisScreen
+import dev.bensapirstein.dardashe.common.launchActivity
+import dev.bensapirstein.dardashe.ime.theme.ThemeMode
+import dev.bensapirstein.dardashe.oldsettings.ThemeManagerActivity
+import dev.bensapirstein.dardashe.util.AndroidVersion
 import dev.patrickgold.jetpref.datastore.model.observeAsState
 import dev.patrickgold.jetpref.ui.compose.ListPreference
 import dev.patrickgold.jetpref.ui.compose.LocalTimePickerPreference

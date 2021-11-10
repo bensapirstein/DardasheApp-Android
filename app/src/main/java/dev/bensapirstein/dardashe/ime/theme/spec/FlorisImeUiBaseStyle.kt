@@ -14,13 +14,9 @@
  * limitations under the License.
  */
 
-<<<<<<< HEAD:app/src/main/java/dev/bensapirstein/dardashe/ime/theme/spec/FlorisImeUiBaseStyle.kt
-package dev.patrickgold.florisboard.ime.theme.spec
-=======
-package dev.bensapirstein.dardashe.ime.snygg
->>>>>>> 19ada831 (ProjectNameChange: Finalized name changing, app now runs):app/src/main/java/dev/bensapirstein/dardashe/ime/snygg/SnyggStylesheet.kt
+package dev.bensapirstein.dardashe.ime.theme.spec
 
-import dev.patrickgold.florisboard.snygg.SnyggStylesheet
+import dev.bensapirstein.dardashe.snygg.SnyggStylesheet
 
 // TODO: This stylesheet is a complete work in progress, like with all Snygg components
 val FlorisImeUiBaseStyle = SnyggStylesheet {

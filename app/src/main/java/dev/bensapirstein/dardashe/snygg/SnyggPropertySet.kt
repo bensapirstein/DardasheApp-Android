@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package dev.patrickgold.florisboard.snygg
+package dev.bensapirstein.dardashe.snygg
 
 import androidx.annotation.FloatRange
 import androidx.annotation.IntRange
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
-import dev.patrickgold.florisboard.snygg.value.RgbaColor
-import dev.patrickgold.florisboard.snygg.value.SnyggDpSizeValue
-import dev.patrickgold.florisboard.snygg.value.SnyggImageRefValue
-import dev.patrickgold.florisboard.snygg.value.SnyggImplicitInheritValue
-import dev.patrickgold.florisboard.snygg.value.SnyggPercentageSizeValue
-import dev.patrickgold.florisboard.snygg.value.SnyggSolidColorValue
-import dev.patrickgold.florisboard.snygg.value.SnyggSpSizeValue
-import dev.patrickgold.florisboard.snygg.value.SnyggValue
+import dev.bensapirstein.dardashe.snygg.value.RgbaColor
+import dev.bensapirstein.dardashe.snygg.value.SnyggDpSizeValue
+import dev.bensapirstein.dardashe.snygg.value.SnyggImageRefValue
+import dev.bensapirstein.dardashe.snygg.value.SnyggImplicitInheritValue
+import dev.bensapirstein.dardashe.snygg.value.SnyggPercentageSizeValue
+import dev.bensapirstein.dardashe.snygg.value.SnyggSolidColorValue
+import dev.bensapirstein.dardashe.snygg.value.SnyggSpSizeValue
+import dev.bensapirstein.dardashe.snygg.value.SnyggValue
 
 class SnyggPropertySet(val properties: Map<String, SnyggValue>) {
     val width = properties[Snygg.Width] ?: SnyggImplicitInheritValue
