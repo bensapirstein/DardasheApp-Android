@@ -7,7 +7,21 @@ plugins {
     id("de.mannodermaus.android-junit5")
 }
 
+val versionMajor = 0
+val versionMinor = 1
+val versionPatch = 0
+var versionClassifier = ""
+val isSnapshot = true
+
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("C:\\Arabic\\NLP\\Android\\keystores\\upload-keystore.jks")
+            storePassword = "3arabrewDardashe"
+            keyAlias = "upload"
+            keyPassword = "3arabrewDardashe"
+        }
+    }
     compileSdk = 31
     buildToolsVersion = "30.0.3"
     ndkVersion = "22.1.7171670"
@@ -26,8 +40,8 @@ android {
         applicationId = "dev.bensapirstein.dardashe"
         minSdk = 23
         targetSdk = 30
-        versionCode = 59
-        versionName = "0.3.14"
+        versionCode = generateVersionCode()
+        versionName = generateVersionName()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -53,6 +67,7 @@ android {
             //abiFilters += listOf("x86", "x86_64", "armeabi-v7a", "arm64-v8a")
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")
         }
+        signingConfig = signingConfigs.getByName("release")
 
         sourceSets {
             maybeCreate("main").apply {
@@ -110,7 +125,8 @@ android {
 
             resValue("mipmap", "floris_app_icon", "@mipmap/ic_app_icon_release")
             resValue("mipmap", "floris_app_icon_round", "@mipmap/ic_app_icon_release_round")
-            resValue("string", "floris_app_name", "@string/app_name")
+            resValue("string", "floris_app_name", "Dardashe")
+            //resValue("string", "floris_app_name", "@string/app_name")
         }
     }
 
@@ -130,6 +146,22 @@ android {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+fun generateVersionCode(): Int {
+    return versionMajor * 10000 + versionMinor * 100 + versionPatch
+}
+
+fun generateVersionName(): String {
+    var versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
+    if (versionClassifier == "" && isSnapshot) {
+        versionClassifier = "SNAPSHOT"
+    }
+
+    if (versionClassifier != "") {
+        versionName += "-$versionClassifier"
+    }
+    return versionName;
 }
 
 dependencies {
@@ -166,4 +198,7 @@ dependencies {
 
     androidTestImplementation("androidx.test.ext", "junit", "1.1.2")
     androidTestImplementation("androidx.test.espresso", "espresso-core", "3.3.0")
+
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation(platform("com.google.firebase:firebase-bom:29.0.0"))
 }
